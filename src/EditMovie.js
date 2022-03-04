@@ -9,7 +9,7 @@ export const EditMovie = ({ InitialMovieList, movieList, setMovieList }) => {
   const { id } = useParams();
   console.log(id);
   const initialItem = InitialMovieList[id];
-  const [movie, setMovie] = useState({});
+  
   const [name, setName] = useState(initialItem.name);
   const [poster, setPoster] = useState(initialItem.poster);
   const [summary, setSummary] = useState(initialItem.summary);
